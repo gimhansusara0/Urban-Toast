@@ -13,6 +13,7 @@ void main() {
 final ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   primaryColor: accentColor,
+  primaryColorDark:  darkColor,
   scaffoldBackgroundColor: Colors.white,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
