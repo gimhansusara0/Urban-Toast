@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
       if (orientation == Orientation.portrait) {
         return _portraitBuilder(context);
       } else {
-        return _landscapeBuilder();
+        return _landscapeBuilder(context);
       }
     },
   ),
@@ -40,13 +40,36 @@ Widget _portraitBuilder(BuildContext context) {
               height: MediaQuery.of(context).size.height * 0.4,
               child: LoginImg(),
             ),
-            Expanded(child: LoginForm())
+            Expanded(child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: BoxDecoration(
+                color: Theme.of(context).scaffoldBackgroundColor,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(100))
+              ),
+              child: LoginForm()))
           ],
         ),
       ),
   );
 }
 
-Widget _landscapeBuilder() {
-  return Container();
+Widget _landscapeBuilder(BuildContext context) {
+  return SingleChildScrollView(
+    child: Container(
+      width: double.infinity,
+      height: MediaQuery.of(context).size.height,
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor,
+      ),
+      child: Row(
+        children: [
+          Expanded(child: LoginImg()),
+          Expanded(child: Container(
+            decoration: BoxDecoration(color: Theme.of(context).scaffoldBackgroundColor),
+            child: LoginForm()))
+        ],
+      ),
+    ),
+  );
 }
