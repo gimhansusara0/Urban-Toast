@@ -5,6 +5,24 @@ class TopRibbon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row();
+    return SafeArea(
+      child: SizedBox(
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Welcome Ranuja!',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500
+              ),),
+              Icon(Icons.notifications)
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

@@ -14,6 +14,7 @@ final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: accentColor,
     primaryColorDark: darkColor,
+    cardColor: darkHighlight,
     scaffoldBackgroundColor: Colors.white,
     elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -24,6 +25,7 @@ final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: accentColor,
     scaffoldBackgroundColor: darkColor,
+    cardColor: darkHighlight,
     textTheme: TextTheme(
       bodyLarge: TextStyle(
           fontSize: 16,
