@@ -87,7 +87,7 @@ class _RegisterFormState extends State<RegisterForm> {
                         child: ElevatedButton(
                             onPressed: () {},
                             child: Text(
-                              'Login',
+                              'Signup',
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.w800),
                             ))),
