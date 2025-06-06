@@ -4,9 +4,9 @@ import 'package:urban_toast/screens/auth/register_screen.dart';
 const Color darkColor = Color(0xFF0E0F14); 
 const Color accentColor = Color(0xFFC57C4F);
 
-void main() {
-  runApp(const MyApp());
-}
+  void main() {
+    runApp(const MyApp());
+  }
 
 
 // Define the light theme

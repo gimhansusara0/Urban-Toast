@@ -15,7 +15,7 @@ class _RegisterFormState extends State<RegisterForm> {
   final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
