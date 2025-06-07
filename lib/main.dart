@@ -29,7 +29,7 @@ final ThemeData darkTheme = ThemeData(
     textTheme: TextTheme(
       bodyLarge: TextStyle(
           fontSize: 16,
-          color: Colors.white70,
+          color: Colors.white,
           fontFamily: 'monserrat'), // Default font
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
